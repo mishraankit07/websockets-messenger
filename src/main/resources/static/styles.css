@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+#messages {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#inputArea {
+    display: flex;
+    padding: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#textMessage {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#fileInput {
+    margin-right: 10px;
+}
+
+#status {
+    color: green;
+}
+
+#usernameInput {
+    margin-bottom: 10px;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.message-box {
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f8ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#loadingSpinner {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
