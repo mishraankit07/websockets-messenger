@@ -5,20 +5,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Message {
 
     private String senderId;
-    private String receiverId;
     // text, video, images
     private String dataType;
     private String data;
 
-    public Message(){
-    }
-
     public Message(@JsonProperty("senderId") String senderId,
-                   @JsonProperty("receiverId") String receiverId,
                    @JsonProperty("dataType") String dataType,
                    @JsonProperty("data") String data) {
         this.senderId = senderId;
-        this.receiverId = receiverId;
         this.dataType = dataType;
         this.data = data;
     }
@@ -29,14 +23,6 @@ public class Message {
 
     public void setSenderId(String senderId) {
         this.senderId = senderId;
-    }
-
-    public String getReceiverId() {
-        return receiverId;
-    }
-
-    public void setReceiverId(String receiverId) {
-        this.receiverId = receiverId;
     }
 
     public String getDataType() {
@@ -59,7 +45,6 @@ public class Message {
     public String toString() {
         return "Message{" +
                 "senderId='" + senderId + '\'' +
-                ", receiverId='" + receiverId + '\'' +
                 ", dataType='" + dataType + '\'' +
                 ", data='" + data + '\'' +
                 '}';

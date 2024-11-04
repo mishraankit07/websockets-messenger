@@ -12,4 +12,4 @@ aws:
   credentials:
     access-key:
     secret-key:
-  region: eu-north-1
+  region:
