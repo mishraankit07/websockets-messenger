@@ -17,6 +17,6 @@ public class ChatController {
     @SendTo("/topic/messages")
     public Message sendMessage(Message message) {
         System.out.println("received message from server:" + message);
-        return new Message("Hey hey from server:" + message.getName());
+        return message;
     }
 }
