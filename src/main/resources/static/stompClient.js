@@ -38,5 +38,5 @@ export function activate(showMessage){
 }
 
 export function isInitialized(){
-    return stompClient.connected
+    return stompClient != null && stompClient.connected
 }

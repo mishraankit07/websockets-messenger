@@ -40,12 +40,13 @@ body {
 }
 
 #usernameInput {
-    margin-bottom: 10px;
+    width: 150px;
+    margin-right: 10px;
 }
 
-.btn-small {
-    padding: 5px 10px;
+.btn-xs {
     font-size: 12px;
+    padding: 4px 8px;
 }
 
 .message-box {
@@ -73,4 +74,11 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-weight: bold;
+}
+
+#connectBtn, #disconnectBtn {
+    display: inline-block;
+    width: auto;
+    padding: 4px 8px;
+    font-size: 12px;
 }
