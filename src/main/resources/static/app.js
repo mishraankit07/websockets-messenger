@@ -1,12 +1,19 @@
 import { isInitialized, activate, deactivate, publishMessage } from './stompClient.js';
 
-document.getElementById("connectBtn").addEventListener("click", connect);
+const urlParams = new URLSearchParams(window.location.search);
+const username = urlParams.get("username");
+
+if (username) {
+    document.getElementById("welcomeMessage").textContent = `Hello, ${username}! Welcome to the chat.`;
+} else {
+    window.location.href = "index.html"; // Redirect back if no username
+}
+
 document.getElementById("disconnectBtn").addEventListener("click", disconnect);
 document.getElementById("sendBtn").addEventListener("click", sendMessage);
 
-function connect() {
-    activate(showMessage);
- }
+// activate stomp client connection
+activate(showMessage);
 
 function disconnect() {
     if (isInitialized()) {
@@ -15,6 +22,8 @@ function disconnect() {
         document.getElementById("status").textContent = "Disconnected";
         document.getElementById("status").style.color = "red";
     }
+
+    window.location.href='index.html';
 }
 
 function sendMessage() {
@@ -25,7 +34,6 @@ function sendMessage() {
 
     const textMessage = document.getElementById("textMessage").value;
     const fileInput = document.getElementById("fileInput").files[0];
-    const username = document.getElementById("usernameInput").value || "Anonymous";
 
     if (fileInput) {
         uploadFile(fileInput, username);

@@ -3,5 +3,3 @@ where the backend is written in Java Spring boot and client side code is written
 
 The images and video files uploaded by a client are stored in an AWS S3 bucket for lower latency and better performance
 during communication and faster rendering on the client side.
-
-The setup is dockerized and can be found here: https://hub.docker.com/repository/docker/anky008/messenger/general 
