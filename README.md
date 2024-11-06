@@ -17,4 +17,4 @@ project setup:
 
 
 demo:
-[![Demo Screenshot](https://drive.google.com/uc?export=view&id=1TU_OAhjEcfaGiHEOozOK4nkja-B3eJ_z)(https://drive.google.com/file/d/1D0N8bICBwJcqZ5wkGy20z7eRCc2oqdtj/view?usp=sharing)
+[![Watch the video](https://drive.google.com/uc?export=view&id=1TU_OAhjEcfaGiHEOozOK4nkja-B3eJ_z)(https://drive.google.com/file/d/1D0N8bICBwJcqZ5wkGy20z7eRCc2oqdtj/view?usp=sharing)
